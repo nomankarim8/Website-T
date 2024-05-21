@@ -1,0 +1,54 @@
+<!-- templates/base_generic.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Album</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'gallery:upload_photo' %}">Upload Photo</a></li>
+                    <li><a href="{% url 'gallery:photo_list' %}">My Photos</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
+
+
+<!-- gallery/templates/gallery/upload_photo.html -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>Upload Photo</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+  </form>
+{% endblock %}
+<!-- gallery/templates/gallery/photo_list.html -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>My Photos</h2>
+  <ul>
+    {% for photo in photos %}
+      <li><img src="{{ photo.image.url }}" alt="Photo {{ forloop.counter }}"></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
