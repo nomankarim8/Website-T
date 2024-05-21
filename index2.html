@@ -1,0 +1,24 @@
+<!-- templates/registration/register.html -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>Register</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+  </form>
+{% endblock %}
+<!-- templates/users/create_profile.html -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>Create Profile</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+{% endblock %}
