@@ -14,7 +14,7 @@ if(nam2 == nam):
 print("yes brother i am ", nam)
 print("As i am ", y, z, x)
 
-fuck = 1
+whomi8 = 1
 
 for fuck in range(10):
     print(nam, "Gay")
