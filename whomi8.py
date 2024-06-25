@@ -3,9 +3,9 @@ x = 'y'
 y = 'G'
 z = 'a'
 
-nam2 = 'siddik'
+nam2 = 'Whomi8'
 
-nam = input("Tor nam lek : ")
+nam = input("pe : ")
 
 if(nam2 == nam):
     while True:
