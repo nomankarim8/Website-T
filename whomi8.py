@@ -23,6 +23,6 @@ for whomi8 in range(10):
 
 
     print(nam, "Consultation")
-    
+
     whomi8 += 1
-...
+..
