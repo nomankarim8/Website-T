@@ -12,7 +12,7 @@ if(nam2 == nam):
         print("whomi8 is your grandmother's husband")
         
 print("yes brother i am ", nam)
-print("Ar ami akta", y, z, x)
+print("As", y, z, x)
 
 fuck = 1
 
