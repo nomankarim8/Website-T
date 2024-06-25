@@ -9,7 +9,7 @@ nam = input("type our name  : ")
 
 if(nam2 == nam):
     while True:
-        print("Siddik tor nanir jamij")
+        print("whomi8 ")
         
 print("hea vai ami", nam)
 print("Ar ami akta", y, z, x)
