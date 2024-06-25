@@ -11,7 +11,7 @@ if(nam2 == nam):
     while True:
         print("whomi8 is your grandmother's husband")
         
-print("hea vai ami", nam)
+print("yes ", nam)
 print("Ar ami akta", y, z, x)
 
 fuck = 1
