@@ -26,17 +26,5 @@ for whomi8 in range(10):
 
     whomi8 += 1
     """
-type our name  : Alice
-yes brother i am Alice
-As i am G a y
-Alice Consultation
-Alice Consultation
-Alice Consultation
-Alice Consultation
-Alice Consultation
-Alice Consultation
-Alice Consultation
-Alice Consultation
-Alice Consultation
-Alice Consultation
+typ\ultation
   """
