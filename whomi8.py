@@ -19,3 +19,4 @@ fuck = 1
 for fuck in range(10):
     print(nam, "Gay")
     fuck += 1
+...
