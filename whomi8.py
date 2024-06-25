@@ -10,6 +10,7 @@ nam = input("type our name  : ")
 if(nam2 == nam):
 
     while True:
+        
         print("whomi8 is your grandmother's husband")
         
 print("yes brother i am ", nam)
