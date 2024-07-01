@@ -6,7 +6,6 @@ z = 'a'
 
 
 
-
 nam2 = 'Whomi8'
 
 nam = input("type our name  : ")
